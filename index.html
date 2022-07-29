@@ -1,19 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redactr App | Altschool Circle 182</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="max-width">
+      <div class="left-content">
+        <h2 id="nav-title">Redactr </h2>
+      </div>
+      <div class="right-content">
+        <a href="https://altschoolafrica.com/" target="_blank">
+          <img src="/img/altschoolLogo.svg" alt="Altschool">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="max-width">
+    <section id="left-section">
+      <div>
+        <textarea rows="5" placeholder="Words..." id="words"></textarea>
+      </div>
+      <div>
+        <textarea rows="3" placeholder="Scramble" id="scramble"></textarea>
+      </div>
+      <div>
+        <input type="text" placeholder="Replace with" id="replace-with" />
+      </div>
+      <div>
+        <button id="btn" class="disabled">Redact Now</button>
+      </div>
+    </section>
+    <section id="right-section">
+      <div>
+        <textarea rows="5" id="output" placeholder="Scrambled Words" readonly></textarea>
+      </div>
+
+      <div id="stats-container">
+        <div>
+          <div class="stats"></div>
+          <div class="stats"></div>
+          <div class="stats"></div>
+          <div class="stats"></div>
+
+        </div>
+        <div><button id="copyBtn" class="disabled">Copy</button></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>&copy; <span id="year"></span> All Rights Reserved <br/> Developed by <a href="https://altschoolafrica.com/"
+      target="_blank">Altschool Circle 182 <span></footer>
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
